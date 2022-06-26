@@ -1,0 +1,129 @@
+
+Monday 19th July 2021
+---------------------
+09:00 jenkins libraries updated for AWS ECR
+09:30 DevOps standup
+09:45 MicroServices standup
+10:00 Mob-5 standup
+10:15 user-server ingress correction, remove tls redirect
+10:20 jenkins (local) expose with nip.io and use github oauth
+10:30 asset-manager - helm pipelines updated to use correct ECR
+10:40 abxweb-frontend deploy
+10:45 grimaldi data update video assets to use mod-chub org id
+11:00 jenkins webhook for PR to start pipeline
+11:35 vue-datafetcher
+12:00 kubectl pipelines update for ECR
+12:40 new operation-server repo
+12:45 kubectl pipelines & vue-datafetcher
+13:00 lunch
+13:30 kafka - cmak
+14:00 kafka magic
+14:30 download grimaldi kmz cf https://newton.airboxsystems.com/api/kmlfeed/mod-chubb_Lorry_kml.kmz 
+14:45 ingress and environment variables for layer-server
+15:15 papa I deployment trial (on eks-dev namespace) - mssql-server and identity-server (again)
+15:50 live data layer for Alla
+
+Tuesday 20th July 2021
+----------------------
+09:00 livedatalayer to return 400 BadRequest when assets are not guids
+09:45 microservices standup
+10:00 mob-5 standup
+10:15 identity server token expiry
+10:30 grimaldi- abxweb frontend ingress (not https) & organisation-server endpoint (not https)
+10:50 video-server add variables - helm 059.yaml
+16:15 video-manager deployed, video-server failed
+- deploy asset-manager and alert-receiver (and asset-receiver?)
+video-server deployed
+- alert-receiver failed to deploy - healthchecks etc...
+
+Wednesday 21st July 2021
+------------------------
+deployment to talbot (other deploys are to grimaldi)
+09:45 user service not working for James C? - seems ok
+10:15 deploy alert-receiver
+10:20 deploy abxweb-frontend
+10:30 CORS issues for abxweb-frontend
+10:45 talbot
+14:00 deploy operation-server
+15:50 - icon-manager branch & icon-builder branch for Joe
+
+Thursday 22nd
+09:30 Shan re environments etc (again)
+11:00 talbot
+11:15 video-manager
+
+
+Monday 26th July 2021
+---------------------
+09:00 MicroServices Jenkins tidy up
+09:45 Microservices standup
+10:00 Mobile-5 standup
+10:05 video-manager 504
+
+Tuesday 27th July 2021
+----------------------
+09:00 alert-receiver: MosaicWrapper client call in postData failed with 404
+
+Wednesday 28th July 2021
+------------------------
+500 from video-manager for Tom
+check all endpoints for Tom
+https identity server endpoint?
+
+Tuesday 3rd August 2021
+-----------------------
+removing old topics from kafka (failed)
+talbot discovery service in the docker VM - configured for parallel running with k8s
+Graham re overlay server url in archimedes
+overlay server identity-server issues
+video-translator issues for Tom
+Frank re overlay-server: ALPHA-807
+
+Thursday 5th August 2021
+------------------------
+permissions for Aurimas on permission-server
+permission-server pipeline fails
+archimedes full deployment
+
+Tuesday 10th August 2021
+------------------------
+1. rtmp streams
+2. discovery server - check endpoints (incude BREWSTER) - DONE
+3. pipelines -prevent deployment to archimedes - DONE
+4. turn off keycloak and "new" microservices - archimedes
+5. RDS databases from archimedes - identity server
+6. device manager
+7. user (v1)
+8. list of microservices to deploy
+9. identity, discovery, weather, rain, asset-manager, overlay, task (not required)
+10. brewster environment variables
+11. tag all microservices as release papa-one
+
+Monday 16th August 2021
+Start video failing on grimaldi
+
+Tuesday 17th August 2021
+onboard Dovydas
+fix icon-builder in brewster
+find cause of airbox-locationmanagement issue in brewster
+
+Wednesday 18th August 2021
+kml-webfeed and overlay server affinity
+identity server 1-preview tag
+
+Thursday 19th August 2021
+jenkins pipelines - push manifests into github
+grimaldi location-manager 401 issues
+shinobi 
+
+Friday 20th
+-----------
+shinobi deployment - patch charts after manual hacking
+overlay/kml - grimaldi (Frank)
+brewster k8s locationmanagement issues?
+
+Wednesday 25th August 2021
+--------------------------
+
+===
+buildAndDeploy replacements

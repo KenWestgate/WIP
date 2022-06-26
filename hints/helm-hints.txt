@@ -1,0 +1,10 @@
+$filename = "video-provider-wrapper-20220118.1350.145.tgz"
+
+curl --user 'admin:gLV0xT1jSxSVK#$MzREW' https://registry.airboxsystems.com/repository/sundman-charts/ -v --upload-file $filename
+curl --user 'admin:gLV0xT1jSxSVK#$MzREW' https://registry.airboxsystems.com/repository/espin-charts/ -v --upload-file $filename
+curl --user 'admin:gLV0xT1jSxSVK#$MzREW' https://registry.airboxsystems.com/repository/aldrin-charts/ -v --upload-file $filename
+curl --user 'admin:gLV0xT1jSxSVK#$MzREW' https://registry.airboxsystems.com/repository/piton-charts/ -v --upload-file $filename
+
+curl --user 'admin:8wuq%@AB8WI2MVU7QpYD' https://nexus.abxinternal.com/repository/grimaldi-charts/ -v --upload-file $filename
+curl --user 'admin:8wuq%@AB8WI2MVU7QpYD' https://nexus.abxinternal.com/repository/talbot-charts/ -v --upload-file $filename
+curl --user 'admin:8wuq%@AB8WI2MVU7QpYD' https://nexus.abxinternal.com/repository/archimedes-charts/ -v --upload-file $filename

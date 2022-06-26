@@ -1,0 +1,715 @@
+{
+    "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+    "items": [
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-12T13:54:54Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "flux-system",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "airbox-development-charts",
+                "namespace": "flux-system",
+                "resourceVersion": "95071403",
+                "uid": "bcc9608a-d5f9-4fc3-9a20-c793f1d462d7"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "secretRef": {
+                    "name": "airbox-development-charts-credentials"
+                },
+                "timeout": "60s",
+                "url": "https://nexus.abxinternal.com/repository/airbox-development-charts"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d",
+                    "lastUpdateTime": "2022-06-13T06:05:51Z",
+                    "path": "helmrepository/flux-system/airbox-development-charts/index-f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d.yaml",
+                    "revision": "f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d",
+                    "size": 62671,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/airbox-development-charts/index-f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-13T06:05:51Z",
+                        "message": "stored artifact for revision 'f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-13T06:05:51Z",
+                        "message": "stored artifact for revision 'f254f58b5f9040c27f0735ae149b89c5731a7d6e41fc9f314737c7ef4ec1301d'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/airbox-development-charts/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "akhq",
+                "namespace": "flux-system",
+                "resourceVersion": "94884162",
+                "uid": "bebb7d32-875c-41ec-bc9a-ca92ec92624a"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://akhq.io/"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55",
+                    "lastUpdateTime": "2022-06-12T21:37:30Z",
+                    "path": "helmrepository/flux-system/akhq/index-562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55.yaml",
+                    "revision": "562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55",
+                    "size": 9189,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/akhq/index-562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '562b4fa202c29f16e91aac63b24a0bb8a661f7031a23c2002604621f17b68f55'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/akhq/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "bitnami",
+                "namespace": "flux-system",
+                "resourceVersion": "94884222",
+                "uid": "13c7a7d2-dde7-4c31-a476-1e5fa56b2680"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://charts.bitnami.com/bitnami"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4",
+                    "lastUpdateTime": "2022-06-12T21:37:30Z",
+                    "path": "helmrepository/flux-system/bitnami/index-8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4.yaml",
+                    "revision": "8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4",
+                    "size": 4123828,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/bitnami/index-8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-12T03:18:00Z",
+                        "message": "stored artifact for revision '8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-12T03:18:00Z",
+                        "message": "stored artifact for revision '8ab2284c9e1974823832f03885d29c531aac078dfd40146f12da1b292a5fccf4'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/bitnami/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "confluentinc",
+                "namespace": "flux-system",
+                "resourceVersion": "94884151",
+                "uid": "0baa0799-bc27-4ca3-8748-01ffffb81dff"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://confluentinc.github.io/cp-helm-charts/"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0",
+                    "lastUpdateTime": "2022-06-12T21:37:29Z",
+                    "path": "helmrepository/flux-system/confluentinc/index-c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0.yaml",
+                    "revision": "c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0",
+                    "size": 2327,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/confluentinc/index-c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision 'c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision 'c8c908e0c0f2fcfa40ff665f2e5a50fbdf50df12189a7701b4e157a9263525d0'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/confluentinc/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "datalust",
+                "namespace": "flux-system",
+                "resourceVersion": "94884176",
+                "uid": "bbfccf1a-e4c8-47b4-a3ae-b54258d1f128"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://helm.datalust.co"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816",
+                    "lastUpdateTime": "2022-06-12T21:37:30Z",
+                    "path": "helmrepository/flux-system/datalust/index-666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816.yaml",
+                    "revision": "666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816",
+                    "size": 20582,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/datalust/index-666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '666e40a617b5372a85148cc6e551e80545794fd8daff0cd8c19db29cdc160816'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/datalust/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "emberstack",
+                "namespace": "flux-system",
+                "resourceVersion": "94884156",
+                "uid": "7ab5cbd7-4d09-4574-ba5a-65c8894d2e1b"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://emberstack.github.io/helm-charts"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a",
+                    "lastUpdateTime": "2022-06-12T21:37:29Z",
+                    "path": "helmrepository/flux-system/emberstack/index-a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a.yaml",
+                    "revision": "a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a",
+                    "size": 103553,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/emberstack/index-a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision 'a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision 'a114c924b5578774a8bbbdc14fb6b1fdb5232b557504f29f110128093913120a'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/emberstack/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "ingress-nginx",
+                "namespace": "flux-system",
+                "resourceVersion": "94884076",
+                "uid": "54f89be3-ee65-4462-8996-4c9093823a42"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://kubernetes.github.io/ingress-nginx/"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf",
+                    "lastUpdateTime": "2022-06-12T21:37:28Z",
+                    "path": "helmrepository/flux-system/ingress-nginx/index-27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf.yaml",
+                    "revision": "27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf",
+                    "size": 100538,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/ingress-nginx/index-27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '27d0e52f0c058298ed1af906ff92dfc1050f59f0518a9021d3b9d8794fe7c3bf'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/ingress-nginx/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "jetstack",
+                "namespace": "flux-system",
+                "resourceVersion": "94884106",
+                "uid": "d8a3186b-3f53-48d6-a498-a7126e3b28f6"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://charts.jetstack.io"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d",
+                    "lastUpdateTime": "2022-06-12T21:37:28Z",
+                    "path": "helmrepository/flux-system/jetstack/index-454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d.yaml",
+                    "revision": "454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d",
+                    "size": 94472,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/jetstack/index-454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:39Z",
+                        "message": "stored artifact for revision '454a7c91b1ec6084a195b5a2f6b91789170efb1f8fb1b50b39b7573bd0d0ad6d'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/jetstack/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "prometheus-community",
+                "namespace": "flux-system",
+                "resourceVersion": "94884148",
+                "uid": "7ff87436-9c1a-4748-98fe-a66d50bb472e"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://prometheus-community.github.io/helm-charts"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631",
+                    "lastUpdateTime": "2022-06-12T21:37:29Z",
+                    "path": "helmrepository/flux-system/prometheus-community/index-7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631.yaml",
+                    "revision": "7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631",
+                    "size": 1920563,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/prometheus-community/index-7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-12T09:29:23Z",
+                        "message": "stored artifact for revision '7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-12T09:29:23Z",
+                        "message": "stored artifact for revision '7d7524d8b5ec99ca131630ac0a2d1b06cc94aeec2b07ab979e75b02d671ff631'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/prometheus-community/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "prometheus-msteams",
+                "namespace": "flux-system",
+                "resourceVersion": "94884135",
+                "uid": "e219202b-25b0-46f2-9338-69d4bd53ad25"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://prometheus-msteams.github.io/prometheus-msteams"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122",
+                    "lastUpdateTime": "2022-06-12T21:37:29Z",
+                    "path": "helmrepository/flux-system/prometheus-msteams/index-5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122.yaml",
+                    "revision": "5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122",
+                    "size": 8849,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/prometheus-msteams/index-5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision '5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision '5823c1e47ba589686455d6197020935f2aaac54c556317ec10148902bd02c122'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/prometheus-msteams/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "runix",
+                "namespace": "flux-system",
+                "resourceVersion": "94884023",
+                "uid": "1df6990e-b4a7-48ce-af6e-16268377342e"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://helm.runix.net"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca",
+                    "lastUpdateTime": "2022-06-12T21:37:28Z",
+                    "path": "helmrepository/flux-system/runix/index-9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca.yaml",
+                    "revision": "9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca",
+                    "size": 45905,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/runix/index-9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision '9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision '9be880cd5fe4df49afe99189ea5f915c9587db8978dfb18ebd75e7553b1cd9ca'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/runix/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "stakater",
+                "namespace": "flux-system",
+                "resourceVersion": "94884057",
+                "uid": "0c378e3d-0963-46a2-bcc4-d14958e0c384"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://stakater.github.io/stakater-charts"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9",
+                    "lastUpdateTime": "2022-06-12T21:37:28Z",
+                    "path": "helmrepository/flux-system/stakater/index-b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9.yaml",
+                    "revision": "b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9",
+                    "size": 655634,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/stakater/index-b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision 'b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:40Z",
+                        "message": "stored artifact for revision 'b628fd6e6da60cb4ad919290c7ae37dda5b8d5db9c853fbf9fc9f9fa352888f9'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/stakater/index.yaml"
+            }
+        },
+        {
+            "apiVersion": "source.toolkit.fluxcd.io/v1beta2",
+            "kind": "HelmRepository",
+            "metadata": {
+                "creationTimestamp": "2022-06-10T18:56:38Z",
+                "finalizers": [
+                    "finalizers.fluxcd.io"
+                ],
+                "generation": 1,
+                "labels": {
+                    "kustomize.toolkit.fluxcd.io/name": "sources",
+                    "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+                },
+                "name": "timescaledb",
+                "namespace": "flux-system",
+                "resourceVersion": "94884129",
+                "uid": "5ff0955d-9d2e-400a-b42f-46aa8e87da02"
+            },
+            "spec": {
+                "interval": "1m0s",
+                "timeout": "60s",
+                "url": "https://charts.timescale.com"
+            },
+            "status": {
+                "artifact": {
+                    "checksum": "d47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757",
+                    "lastUpdateTime": "2022-06-12T21:37:28Z",
+                    "path": "helmrepository/flux-system/timescaledb/index-d47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757.yaml",
+                    "revision": "d47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757",
+                    "size": 56666,
+                    "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/timescaledb/index-d47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757.yaml"
+                },
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:41Z",
+                        "message": "stored artifact for revision 'd47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastTransitionTime": "2022-06-10T18:56:41Z",
+                        "message": "stored artifact for revision 'd47d1da0efeaaa642eec1553e1e2ac8c136c3ae842a8c37d9f88ce4d9450e757'",
+                        "observedGeneration": 1,
+                        "reason": "Succeeded",
+                        "status": "True",
+                        "type": "ArtifactInStorage"
+                    }
+                ],
+                "observedGeneration": 1,
+                "url": "http://source-controller.flux-system.svc.cluster.local./helmrepository/flux-system/timescaledb/index.yaml"
+            }
+        }
+    ],
+    "kind": "HelmRepositoryList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "95082643"
+    }
+}

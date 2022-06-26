@@ -1,0 +1,27 @@
+sundman abxweb-frontend and supporting services
+    http -> https in configmap
+    test-connections- remove from manifests?s
+    "parameter" in assorted configmaps
+    locationstate-server db password etc check
+        brewster -
+        espin - 
+        ncsu -
+        ortus - 
+        piton -
+        sundman - done
+    general search for :52
+    missing user-serveer-v1
+    organisation-servr: Keycloak__ClientId & NLog tidy..
+    permissin-serveer: parameter....
+organisation-dataexchange - missing "client" in manifests
+organisationlayer-dataexchange - cognitoe branch rebase
+also change docker registry for discoveryservice
+aldrin identity server password in env var files
+organisatonlayer-dataexchange - client prefixes
+organisatonlayer-dataexchange - feed ID
+espin locationmanagement databases for MODCHUBB and ORTUS
+identity-server passwords seem wrong - PITON etc...?
+locaiton-database wtf - clients are wrong
+protocol-forwarder... espin in aldrin...?
+
+how to deploy from a third party helm chart through pipeline (grimaldi/talbot)

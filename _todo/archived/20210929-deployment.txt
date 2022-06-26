@@ -1,0 +1,14 @@
+new env vars for alla - flightplan-filing
+organisation-dataexchange - missing "client" in manifests
+environment variables check across the board
+keycloak tls
+discoveryservice json
+also change docker registry for discoveryservice
+aldrin identity server password in env var files
+organisatonlayer-dataexchange - client prefixes
+organisatonlayer-dataexchange - feed ID
+espin locationmanagement databases for MODCHUBB and ORTUS
+======================================================
+DONE
+espin - configmaps and secrets
+jenkins pipeline for helm deployments to grimaldi - docker registry replacement

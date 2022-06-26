@@ -1,0 +1,70 @@
+in flux manifests for tf-development-grimaldi:
+
+kafka - set
+    cp-ksql-server:
+      enabled: true
+
+check that the ksql-demo.yaml has deployed
+
+==
+
+connect a shell into the ksql container of the ksql-demo pod
+
+launch ksql to connect to the server:
+ksql http://kafka-cp-ksql-server:8088
+
+ksql http://kafka-cp-ksql-server.kafka.svc.cluster.local:8088
+
+
+ksql http://ksqldb-server:8088
+===
+To add partitions to the existing topic:
+instructions below are adapted from
+https://developer.confluent.io/tutorials/change-topic-partitions-replicas/ksql.html#describe-the-original-topic
+===
+
+SET 'auto.offset.reset'='earliest';
+
+CREATE STREAM asset_received \
+(COLUMN0 VARCHAR KEY, COLUMN1 VARCHAR) WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO');
+
+CREATE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO', \
+PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+### 20220523 ###
+### 20220523 ###
+CREATE STREAM asset_received WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT='AVRO');
+
+CREATE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO', \
+PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+CREATE STREAM asset_received WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO');
+
+CREATE OR REPLACE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', \
+    VALUE_FORMAT='AVRO', \
+    KEY_FORMAT='AVRO', \
+  PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+### 20220523 ###
+
+
+
+PRINT airbox.grimaldi.asset-management.event.generic-asset-data-received.0;
+
+~~~~~
+TERMINATE CSAS_ASSET_RECEIVED_PARTITIONED_17;
+DROP STREAM asset_received_partitioned;
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SUNDMAN
+CREATE STREAM asset_received (COLUMN0 VARCHAR KEY, COLUMN1 VARCHAR) WITH (KAFKA_TOPIC = 'airbox.sundman.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO');
+SET 'auto.offset.reset'='earliest';
+CREATE STREAM asset_received_partitioned WITH (KAFKA_TOPIC = 'airbox.sundman.asset-management-partitioned.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO', PARTITIONS = 5, REPLICAS = 5) AS SELECT * FROM asset_received;
+
+

@@ -1,0 +1,13 @@
+2021-05-28
+----------
+- 09:00 kafka learning
+- 09:45 stand-up
+- 10:00 asset ingestion - kafka issues
+- 11:30 jenkins session
+- 12:00 video-translator update pipeline to build
+- 12:30 livedatalayer - createlivedatalayer database logic corrected
+- 12:45 video-translator issues
+- 13:15 livedatalayer - createlivedatalayer...
+- 13:45 lunch
+- 14:15 livedatalayer - createlivedatalayer
+- 16:30 tools down

@@ -1,0 +1,166 @@
+
+Today
+-----
+09:00 livedatalayer createorreplace
+09:45 stand up bravo
+10:00 stand up mob-5
+10:15 grimaldi/talbot cluster issues
+11:30 tech brief
+12:00 grimaldi/talbot cluster issues
+13:30 refinement
+14:00 livedatalayer create-or-replace
+14:45 grimaldi/talbot cluster issues
+====
+09:00 1:1
+09:30 deploy livedatalayer
+09:45 stand up - micro
+10:00 stand up - mobile
+10:15 Session with Graham
+12:00 livedatalayer minor patch and deploy
+12:15 schema delete for Aurimas
+12:30 talbot redeployment
+
+Monday 7th June
+===============
+09:00 on-prem server issues
+09:45 micro services stand up
+10:00 mobile 5 stand up
+10:15 DevOps handover
+11:30 admin/postgres issues with James G
+11:45 tech brief
+
+Tuesday 8th June
+================
+13:15 BRAVO-166 deploy:
+  FeedProxy server
+  Layer server
+  LiveDataLayer server
+  Organisation server
+  User server
+  abxweb-frontend
+15:00 elog deployment session with Yong, Salah &central
+
+
+Wednesday 9th June 2021
+=======================
+08:30 on-prem cluster and asset data for mobile-5
+09:45 microservice stand up
+10:00 mob-5 stand up
+10:15 on-prem asset management issues for mobile-5
+12:30 abxweb-frontend cognito issues
+
+Thursday 10th June 2021
+=======================
+09:00 MOB-36 + continue asset ingestion config and tracing.
+09:45 microservice stand up
+10:00 mob-5 stand up
+10:15 MOB-36 + continue asset ingestion config and tracing.
+10:30 MODChubbLMS database with Salah
+10:45 abxweb-frontend environment variable issues
+1:00 MOB-36 + continue asset ingestion config and tracing.
+
+Thursday 17th June 2021
+=======================
+- message to massimo, nik and MArk re no inheritance and just list of cameras...
+- EKS - docker registry issues with Steve,Shan and Yong
+- chat Joe about MOD data - test data
+
+Friday 18th June 2021
+=====================
+09:00 Confluence updates for Jenkins running/environment variables
+09:30 Kafka issues?
+09:45 standup
+10:00 mtg re blockers
+10:30 re-deploy keycloak on grimaldi
+11:30 update grimaldi environment variables to point at keycloak
+12:30 shinobi install
+13:00 HR re passport and security clearance
+13:30 lunch
+- shinobi instance (EKS?) - handed off to Steve/Shan
+- docker speed limit for asset-manager etc for Aurimas
+- Location stuff for Alla
+15:20 
+- videotranslator pipelines for Aurimas
+15:30
+- location issues for Alla
+- user-server - comment out unit tests temporarily...
+- merge seq branches
+
+Monday 21st June 2021
+=====================
+      - ms-node-02 recovery
+08:30 - protocol forwarder deploy to on-prem grimaldi
+10:00 - stand-up
+10:15 - on-prem to AWS EKS migration
+
+Wednesday 23rd June 2021
+EKS migration
+* discovery service
+* video-server deployment image wrong repo
+* video-server ingress controller
+- merge helm into main for jenkins-libraries
+  - replace all @helm library calls in Jenkinsfiles
+  - replace the "buildAndDeplot" by "buildMicroServiceAirboxSystemsUseHelm" in these files
+
+Friday 25th June 2021
+---------------------
+* keycloak redirects to http://keycloak-grimaldi.abxinternal.com/auth/realms/grimaldi/.well-known/openid-configuration which gives a 500 error...
+* CORS on abxweb-frontend-grimaldi.abxinternal.com
+* remove NodePorts from repos
+* new environment variables for abxweb-frontend
+* location manager CORS from abxweb?
+* Discovery-Server missing links
+* bootstrap servers - what should this be now??? (see icon-builder error?)
+
+Monday 28th June 2021
+---------------------
+* login to kubernetes in AWS -> confluence
+
+Tuesday 29th June 2021
+----------------------
+* retire mock data server
+* ortus datafetcher
+
+Wednesday 30th June 2021
+------------------------
+* recovering EKS cluster
+* identity server issues
+* datafetcher issues
+* video-translator for Frank
+* video-manager port update for video-translator
+* Datadog with Graham
+
+Thursday 1st July
+-----------------
+* resurrect UserMicroService for Alla - pipeline running (branch)
+* protocol forwarder
+* kafka - no topics....?
+
+Friday 2nd July
+---------------
+OFF
+
+Monday 5th July
+---------------
+* nscu data fetcher - env vars, seq - pipeline running (branch)
+
+Tuesday 6th
+
+keycloak accounts in grimaldi for Frank, Stephen and Esther
+
+Wednesday 7th
+--------------
+grimaldi creds for Joe
+grimaldi data for Tom
+ECR migrate from Azure
+
+Thursday 8th July
+-----------------
+10:15 kafka schema registry recovery
+video-manager and data checks for Tom
+
+Wednesday 14th July
+-------------------
+09:00 1:1, standups
+10:15 papa I release deployment planning
+11:30 locaiton manager issues, builds for asset-manager, icon-manager

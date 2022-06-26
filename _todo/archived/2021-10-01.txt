@@ -1,0 +1,18 @@
+2021-10-01
+==========
+sundman abxweb-frontend and supporting servicess
+organisation-dataexchange - missing "client" in manifests
+organisationlayer-dataexchange - cognitoe branch rebase
+also change docker registry for discoveryservice
+aldrin identity server password in env var files
+organisatonlayer-dataexchange - client prefixes
+organisatonlayer-dataexchange - feed ID
+espin locationmanagement databases for MODCHUBB and ORTUS
+identity-server passwords seem wrong - PITON etc...?
+locaiton-database wtf - clients are wrong
+protocol-forwarder... espin in aldrin...?
+
+DONE
+discoveryservice json
+PS-224 organisationlayer-dataexchange merge for ALla
+keycloak tls

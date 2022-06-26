@@ -1,0 +1,21 @@
+#!/bin/bash
+eksctl version
+
+clusterName="tf-staging-archimedes"
+eksctl get nodegroups --cluster=$clusterName --profile=eks-admin
+  
+eksctl upgrade cluster --name $clusterName --profile eks-admin --approve --version=1.21
+eksctl upgrade nodegroup --name=staging-archimedes-m5-2xlarge-withresourcetags --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.21
+eksctl upgrade nodegroup --name=tf-staging-archimedes-m5-2xlarge --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.21
+  
+eksctl upgrade cluster --name $clusterName --profile eks-admin --approve --version=1.22
+eksctl upgrade nodegroup --name=staging-archimedes-m5-2xlarge-withresourcetags --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.22
+eksctl upgrade nodegroup --name=tf-staging-archimedes-m5-2xlarge --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.22
+
+eksctl upgrade cluster --name $clusterName --profile eks-admin --approve --version=1.23
+eksctl upgrade nodegroup --name=staging-archimedes-m5-2xlarge-withresourcetags --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.23
+eksctl upgrade nodegroup --name=tf-staging-archimedes-m5-2xlarge --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.23
+
+eksctl upgrade cluster --name $clusterName --profile eks-admin --approve --version=1.24
+eksctl upgrade nodegroup --name=staging-archimedes-m5-2xlarge-withresourcetags --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.24
+eksctl upgrade nodegroup --name=tf-staging-archimedes-m5-2xlarge --cluster=$clusterName --profile=eks-admin --kubernetes-version=1.24

@@ -1,0 +1,16 @@
+Firehose
+--------
+http://firehose.io/
+--------
+docker run --rm -it --publish 7474:7474 --name firehose ubuntu:20.04
+apt-get update
+apt-get install redis-server -y
+apt-get install ruby-full -y
+apt-get install rainbows -y
+apt-get install ubuntu-dev-tools -y
+gem install firehose
+redis-server &
+firehose server
+=========
+curl "http://127.0.0.1:7474/hi?cid=2039" &
+curl -X PUT -d "Howdy friend" "http://127.0.0.1:7474/hi"

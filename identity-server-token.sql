@@ -1,0 +1,1 @@
+update token.Clients set AccessTokenLifetime = 3600

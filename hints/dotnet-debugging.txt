@@ -1,0 +1,22 @@
+#
+# install tools
+
+cd ~/ &&
+apk add bash &&
+wget https://dot.net/v1/dotnet-install.sh &&
+chmod +x dotnet-install.sh &&
+./dotnet-install.sh -c 5.0 &&
+/root/.dotnet/dotnet tool install --global dotnet-counters &&
+/root/.dotnet/dotnet tool install --global dotnet-dump
+
+#
+# view the metrics
+/root/.dotnet/tools/dotnet-counters monitor -p 1 --refresh-interval 5 --counters System.Runtime
+
+#
+# do the dump
+
+/root/.dotnet/tools/dotnet-dump collect -p 1
+
+#
+# copy the dump off

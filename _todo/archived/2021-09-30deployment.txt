@@ -1,0 +1,17 @@
+discoveryservice json
+organisation-dataexchange - missing "client" in manifests
+keycloak tls
+also change docker registry for discoveryservice
+aldrin identity server password in env var files
+organisatonlayer-dataexchange - client prefixes
+organisatonlayer-dataexchange - feed ID
+espin locationmanagement databases for MODCHUBB and ORTUS
+identity-server passwords seem wrong - PITON etc...?
+locaiton-database wtf - clients are wrong
+protocol-forwarder... espin in aldrin...?
+======================================================
+DONE
+espin - configmaps and secrets
+jenkins pipeline for helm deployments to grimaldi - docker registry replacement
+new env vars for alla - flightplan-filing
+environment variables check across the board

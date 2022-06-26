@@ -1,0 +1,50 @@
+Monday 13th September 2021
+--------------------------
+10:15 - cronjob for video-manager in grimaldi for Aurimas
+12:45 - environment variables for Joe - part of cronjob set up
+13:00 - lunch
+13:00 - archimedes IIS endpoint - Frank confirmation for testing
+14:00 - James Green chat
+
+Tuesday 14th September 2021
+---------------------------
+ingresses and helm chart tidy up
+reloader -> talbot
+talbot access for William
+create-microservice jenkins pipeline
+
+Wednesday 15th September 2021
+-----------------------------
+create-microservice jenkins pipeline
+keycloak discussion with Yong
+DocumentReceiverMicroservice and GeoreferencedDocumentCreatorMicroService migration from abx_apps_lsms archive to AirboxSystems
+mariadb - entrypoint difference between mariadb and bitnami/mariadb
+
+Thursday 16th September 2021
+----------------------------
+Annual Leave
+
+Friday 17th September 2021
+--------------------------
+create-microservice jenkins pipeline
+papa-I panic
+jenkins, new "promote to external" pipeline + other tidy up
+abx-web new environment variable and CORS error
+kafka bootstrap and schema registry updated to new instance
+Created "Promote docker image to External ECR" jenkins pipeline
+
+Monday 20th September 2021
+--------------------------
+standup x2
+"Promote docker image to External ECR" jenkins pipeline
+11:30 - flightplan-filing pipeline and env vars for Alla
+12:15 - jenkins again
+
+---
+Papa I
+sundman, archimedes espin brewster  aldrin / piton newton
+- icon, video database?
+- S3 buckets....
+
+
+

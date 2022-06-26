@@ -1,0 +1,30 @@
+=======================================================
+ssh acans@kx-mi-0210.kixs.org
+sudo -i
+docker login rnlaf-hub.airboxsystems.com
+docker pull rnlaf-hub.airboxsystems.com/repository/rnlaf-images/dutchweather-server:20220113-1129-28
+
+docker tag rnlaf-hub.airboxsystems.com/repository/rnlaf-images/dutchweather-server:20220113-1129-28 harbor.kixs.org/acans/dutchweather-server:20220113-1129-28
+docker login harbor.kixs.org
+docker push harbor.kixs.org/acans/dutchweather-server:20220113-1129-28
+
+
+===============
+1. weather:
+    1. docker image dutchweather-server:20220113-1129-28 uploaded to harbor
+    2. rancher used to edit the deployment for weather-dutchweather-server to use this image
+    3. endpoint tested: https://weather-acans.kixs.org/api/dutchweather/v1/DutchWeather/tafs - returns data
+    4. logs checked - no fails so "TAF AMD" entries are now successfully processed
+    5. the weather container in the docker vm has been stopped
+2. discovery:
+    1. rancher used to update the configmap value services__services__4__addresses__0 to https://weather-acans.kixs.org (ie, use kubernetes)
+    2. updated endpoints to have /api/dutchweather/v1/DutchWeather - KW to check helm charts
+3. identity server:
+    1. environment variable values were not set for
+        IDENTITYSERVER__APISECRET=parameter
+        IDENTITYSERVER__APIUSERPASSWORD=parameter
+        but were present in the secrets file
+        -
+        the helm chart needs to be updated to be consistent with the other microservices so:
+        a. update to make consistent
+        b. test and fix these values as needed.

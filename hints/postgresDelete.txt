@@ -1,0 +1,54 @@
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'airbox-locationmanagement'
+AND pid <> pg_backend_pid();
+
+DROP DATABASE "airbox-locationmanagement";
+
+DROP ROLE liquibase_airbox_locationmanagement;
+
+DROP ROLE airboxlmsuser;
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'modchubb-locationmanagement'
+AND pid <> pg_backend_pid();
+
+DROP DATABASE "modchubb-locationmanagement";
+
+DROP ROLE liquibase_modchubb_locationmanagement;
+
+DROP ROLE modchubblmsuser;
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'ortus-locationmanagement'
+AND pid <> pg_backend_pid();
+
+DROP DATABASE "ortus-locationmanagement";
+
+DROP ROLE liquibase_ortus_locationmanagement;
+
+DROP ROLE ortuslmsuser;
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'nscurapid2-locationmanagement'
+AND pid <> pg_backend_pid();
+
+DROP DATABASE "nscurapid2-locationmanagement";
+
+DROP ROLE liquibase_nscurapid2_locationmanagement;
+
+DROP ROLE nscurapid2lmsuser;
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'vue-locationmanagement'
+AND pid <> pg_backend_pid();
+
+DROP DATABASE "vue-locationmanagement";
+
+DROP ROLE liquibase_vue_locationmanagement;
+
+DROP ROLE vuelmsuser;

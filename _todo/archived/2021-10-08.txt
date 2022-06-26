@@ -1,0 +1,54 @@
+2021-10-08
+----------
+09:00 - grimaldi lost keycloak and other postgres databases
+11:30 - video-translator urls across all environments
+12:30 - abxweb-frontend subfolder
+sundman - protocol-forwarder-configmap - USER_ID = 5
+ABXALRTMG - from Airbox2 database.
+sundman - location management database name "sundman" not "airbox"
+
+
+*** espin alert-server needed?
+
+ToDo
+----
+new rtmp-server for QA
+Sundman website
+Tom re protocol forwarder in Sundman
+
+How do we configure a system for a new client...? (eg Sundman)
+
+video-translator service name vs video-manager env var for this (archimedes video manager)
+kafka archimedes videomanager - bootstrap and schema
+seq -> log to S3 bucket to persist more logs
+flightplan filing - post to eurofpl fails
+eks-internal node failing?
+
+delete kafka topics without environment name
+sundman abxweb-frontend and supporting services
+    http -> https in configmap
+    test-connections- remove from manifests?s
+    "parameter" in assorted configmaps
+    locationstate-server db password etc check
+        brewster -
+        espin - 
+        ncsu -
+        ortus - 
+        piton -
+        sundman - done
+    general search for :52
+    missing user-serveer-v1
+    organisation-servr: Keycloak__ClientId & NLog tidy..
+    permissin-serveer: parameter....
+organisation-dataexchange - missing "client" in manifests
+organisationlayer-dataexchange - cognitoe branch rebase
+also change docker registry for discoveryservice
+aldrin identity server password in env var files
+organisatonlayer-dataexchange - client prefixes
+organisatonlayer-dataexchange - feed ID
+espin locationmanagement databases for MODCHUBB and ORTUS
+identity-server passwords seem wrong - PITON etc...?
+locaiton-database wtf - clients are wrong
+protocol-forwarder... espin in aldrin...?
+
+how to deploy from a third party helm chart through pipeline (grimaldi/talbot)

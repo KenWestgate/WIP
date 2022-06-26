@@ -1,0 +1,15 @@
+asset-manager v3 ?
+rtmp-notifier - port 1935 open?
+task-manager and task-server - api?
+icon-manager aws s3 references need updating
+
+http://archimedes.airboxsystems.com/api/v1/<micro-service>/<api-endpoint-from-grimaldi-page>
+
+AWS_S3 buckets....?
+
+==============================================
+
+DONE - device-server videoserver__URL -> parameter
+DONE - video-server needs namespace
+DONE - location management ingresses - paths need to be updated
+DONE - airbox-kafka -> abx-cluster-kafka

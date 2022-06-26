@@ -1,0 +1,57 @@
+2021-10-18
+---
+COMPLETED
+---
+  - standup
+  - created William's grimaldi credentials
+  - created Esther's grimaldi credentials
+  - confirmed with James C re CORS issues resolved
+  - tested, merged and pushed the fix for location-managementservice to Sundman (via Graham)
+  - DEVOPS-503 with Graham (deploy PS-224 to Espin)
+  - Laila re scrum/release process
+
+
+2021-10-25
+---
+09:00 Espin (and other) env var updates
+09:45 alpha standup
+10:00 mobile 5 standup
+10:15 rename video-server
+- rename video-server to video-server-wrapper (and associated pipelines, env vars)
+- Espin - asset-receiver & overlays for K&N
+- talbot
+- icon-manager for Joe
+- update template chart starting ##service-name##
+2021-10-19
+---
+- create five repos for QA
+- Install client apps on phone and test Espin etc.
+- add seq to protocol forwarder
+- add Mike Whitehurst to keycloak/grimaldi
+
+2021-10-20
+---
+09:00 standup
+09:30 jenkins pipelines - add newman tests
+09:45 Alpha stand up
+10:00 Mob-5 stand up
+10:15 Joe re tickets
+10:30 Graham re discovery server and identity server
+13:00 Laila re DEVOPS-492, comms re K&N and MODCHUBB Newton -> Espin
+13:20 Mariadb and Shinobi - ingress values corrected for Aurimas
+13:35 Graham re archimedes video
+14:50 sundman backup and update env-vars files
+15:00 discovery-server, identity server and testing videos in archimedes
+15:45 aldrin and piton discovery server updates
+17:00 Update configmaps (ISSUERURL and protocol forwarder userid) for production environments
+
+2021-10-21
+---
+08:30 organisationlayer-dataexchange arv-hants-thames-valley espin manifests (DEVOPS-503/PS224)
+10:00 standup
+10:30 overlays in espin
+11:00 discoveryservice deployments
+14:00 Graham re identity servers in production
+16:30 (via Shan) PS224 (DEVOPS-503) deploy organisationlayer-dataexchange for Hants&ThamesValleyARV(?) to K8s
+16:45 Espin - asset-receiver
+21:15 a grimaldi web login for Zygintas (zygintas.budrys@zenitech.co.uk)

@@ -1,0 +1,6 @@
+docker build -t rtmp-server:ubuntu .
+
+
+docker run -it --name rtmp-server-ubuntu --publish 8082:80 --publish 1936:1935 rtmp-server:ubuntu
+docker run -it --name rtmp-server --publish 8081:80 --publish 1935:1935 rtmp-server
+docker run -it --name nginx --publish 8081:80 --publish 1935:1935 nginx

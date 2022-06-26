@@ -1,0 +1,3 @@
+helm repo add abxinternal https://nexus.abxinternal.com/repository/helm-hosted --username admin --password 8wuq%@AB8WI2MVU7QpYD
+
+curl -u admin:8wuq%@AB8WI2MVU7QpYD https://nexus.abxinternal.com/repository/helm-hosted/ --upload-file dutchrainradar-server-0.1.0.tgz -v

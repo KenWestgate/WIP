@@ -1,0 +1,29 @@
+
+CREATE STREAM asset_received \
+(COLUMN0 VARCHAR KEY, COLUMN1 VARCHAR) WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO');
+
+CREATE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO', \
+PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+### 20220523 ###
+### 20220523 ###
+CREATE STREAM asset_received WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO');
+
+CREATE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', VALUE_FORMAT = 'AVRO', \
+PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+CREATE OR REPLACE STREAM asset_received WITH (KAFKA_TOPIC = 'airbox.grimaldi.asset-management.event.generic-asset-data-received.0', VALUE_FORMAT='AVRO', KEY_SCHEMA_ID=1);
+
+CREATE OR REPLACE STREAM asset_received_partitioned WITH \
+(KAFKA_TOPIC = 'airbox.grimaldi.asset-management-partitioned.event.generic-asset-data-received.0', \
+    VALUE_FORMAT='AVRO', \
+    KEY_SCHEMA_ID=1, \
+  PARTITIONS = 3, REPLICAS = 3) AS SELECT * FROM asset_received;
+
+### 20220523 ###
+### 20220523 ###
+

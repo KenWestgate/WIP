@@ -1,0 +1,14 @@
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-3.location-management.cmd.create-asset-location-data.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-3.location-management.cmd.get-asset-locations.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-3.location-management.event.location-data-received.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.asset-management.cmd.get-assets-by-filter.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.asset-management.event.asset-created.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.asset-management.event.generic-asset-data-received.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.asset-telemetry.event.asset-telemetry-updated.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.layer-management.event.create-live-layer.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.layer-management.event.created-live-layer-in-ldls.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.layer-management.event.geojson-location.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.organisation-management.organisation-created.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.organisation-management.organisation-deleted.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.user-management.user-created.0
+kubectl delete kafkatopic --namespace kafka-cluster airbox.platform-5.user-management.user-deleted.0

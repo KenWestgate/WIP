@@ -1,0 +1,13 @@
+2021-05-27
+----------
+- laptop issues 09:00 - 09:45
+- Standup 09:45 - 10:00
+- video-translator pipeline for Aurimas 10:00 - 10:45
+- jenkins-kubectl-agent 10:45 - 11:00
+- call with Tom 11:15 - 11:45
+- abxweb-frontend environment variable -> values files 11:45 - 11:50
+- location-manager allowed origins + 30604 11:50 - 12:15
+- keycloak -> EKS update pipelines, create database 12:15 - 13:00
+- lunch 13:00 - 13:30
+- Call with Tom & Hugh 13:30 - 14:30
+- asset-manager memory leak (kafka?)

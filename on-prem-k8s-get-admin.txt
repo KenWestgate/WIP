@@ -1,0 +1,6 @@
+mobaxterm
+ms-master-00.ad.airboxsystems.com
+k8s-admin
+P@55w0rd-M0
+sudo cat /etc/kubernetes/admin.conf
+# this gives you the admin kubeconfigkubectl 

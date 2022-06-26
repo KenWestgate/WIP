@@ -1,0 +1,47 @@
+@Massimo Balestri: the following will be documented 😊
+
+All,
+
+The long-awaited EKS cluster is finally here, I am delighted to deliver the beast today after a considerable labour, thanks for your forbearance.
+
+It’s already pre-confirmed with the following :
+
+1-	Kafka : https://cmak.abxinternal.com/
+2-	Schema Registry: https://sr.abxinternal.com
+3-	Docker Registry: registry.abxinternal.com
+4-	PGO cluster: https://pgcadmin.abxinternal.com
+5-	Vault: https://vault.abxinternal.com/ui/vault/auth?with=token
+6-	Nexus: https://nexus.abxinternal.com
+7-	Monitoring: https://monitoring.abxinternal.com
+8-	Nginx ingress controller
+
+You have the full power for the namespaces below :
+-	Talbot
+-	Grimaldi
+-	Archimedes
+Docker registry secret (regcred) is already deployed to the mentioned namespaces, so ready to deploy your MS
+
+As you noticed, the domain abxinternal.com is available if you wanted to expose an API endpoint, a sample ingress manifest file can be provided, a demo might be presented if necessary.
+
+How to Login: Since it’s running on AWS, you need :
+
+1-	Install AWS CLI : Click here for the instructions
+2-	Test the CLI: aws version
+3-	Configure CLI credentials: aws configure --profile eks-developer
+4-	Test Credentials: aws sts get-caller-identity --profile eks-developer
+5-	Create your cluster in Lens and copy the kubeconfig file 
+
+Note: if you hit an error in step 4, check your ~/.aws/credentials has the right profile: “aws configure list”  
+
+
+All necessary credentials are in keeper:
+
+ 
+
+Note the AWS user eks-developer has only EKS permissions, cannot login to AWS console. ( don’t try 😊 )
+
+===============================================================================================
+
+NEW clusters (Nov 2021)
+aws eks --region eu-west-2 update-kubeconfig --name tf-development-grimaldi --profile eks-developer
+
